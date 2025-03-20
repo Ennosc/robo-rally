@@ -3,12 +3,10 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
-betatest-edle-eisbecher/
-FeedbackEEvonGG
-betatest_cc.zip
 
-files/abgabe
-files/M2
+
+files/
+
 ### IntelliJ IDEA ###
 /.idea/
 *.iws
