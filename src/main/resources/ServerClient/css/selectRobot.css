@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'Dogica';
+    src: url('../fonts/dogica.ttf') format('truetype');
+}
+
+/* The bold fonts don't work */
+@font-face {
+    font-family: 'Dogica-Bold';
+    src: url('../fonts/dogicabold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Dogica-PixelBold';
+    src: url('../fonts/dogicapixelbold.ttf') format('truetype');
+}
+
+/* CHOOSE YOUR ROBOT */
+.page-header {
+    -fx-font-family: 'Dogica';
+    -fx-font-size: 40px;
+    -fx-text-fill: #BBE6FF;
+    -fx-line-spacing: 36px;
+}
+
+/* Buttons for robot gallery/ AI */
+.blue-button {
+    -fx-font-size: 35px;
+    -fx-text-fill: #BBE6FF;
+    -fx-font-family: 'Dogica';
+    -fx-effect: null;
+    -fx-background-color: transparent; /* Changed from 'none' to 'transparent' */
+    -fx-border-color: transparent;
+    -fx-cursor: hand;
+}
+
+#leftButton:hover, #rightButton:hover {
+    -fx-text-fill: #8BAFCC;
+}
+
+#robotImageSmall1 {
+    -fx-padding-left: 20pt;
+}
+
+#chooseButton, #confirmButton {
+    -fx-background-color: #BBE6FF;
+    -fx-border-color: #3D484A;
+    -fx-text-fill: #000;
+    -fx-border-radius: 0px;
+    -fx-border-width: 2px;
+    -fx-font-family: 'Dogica';
+    -fx-font-size: 40px;
+    -fx-cursor: hand;
+}
+
+#confirmButton {
+    -fx-font-size: 24px;
+}
+
+#chooseButton:hover, #confirmButton:hover {
+    -fx-background-color: #8BAFCC;
+    -fx-cursor: hand;
+}
+
+.username-tf {
+    -fx-border-radius: 0px;
+    -fx-border-width: 2px;
+    -fx-border-color: #BBE6FF;
+    -fx-background-color: transparent;
+    -fx-text-fill: #BBE6FF;
+    -fx-font-size: 20pt;
+    -fx-font-family: 'Dogica';
+}
+
+#chosenRobotLabel {
+    -fx-font-family: 'Dogica';
+    -fx-font-size: 24px;
+    -fx-text-fill: #BBE6FF;
+    -fx-text-alignment: center;
+    -fx-line-spacing: 0;
+    -fx-wrap-text: true;
+    -fx-border-radius: 0px;
+    -fx-border-width: 2px;
+    -fx-border-color: #BBE6FF;
+    -fx-background-color: transparent;
+    -fx-padding: 5px 0;
+}
+
+.ai-label {
+    -fx-font-family: 'Dogica';
+    -fx-font-size: 16px;
+    -fx-text-fill: #BBE6FF;
+    -fx-text-alignment: center;
+    -fx-line-spacing: 0;
+    -fx-border-radius: 0px;
+    -fx-border-width: 2px;
+    -fx-border-color: #BBE6FF;
+    -fx-background-color: transparent;
+    -fx-padding: 5px 0;
+}
+

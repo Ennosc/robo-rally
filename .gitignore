@@ -1,0 +1,48 @@
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+betatest-edle-eisbecher/
+FeedbackEEvonGG
+betatest_cc.zip
+
+files/abgabe
+files/M2
+### IntelliJ IDEA ###
+/.idea/
+*.iws
+*.iml
+*.ipr
+
+### Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### NetBeans ###
+/nbproject/private/
+###txt###
+Client_Log_File.txt
+Client_Log_File.txt.*
+RandomAIClient_Log_File.txt
+RandomAIClient_Log_File.txt.*
+Server_Log_File.txt
+Server_Log_File.txt.*
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+### Mac OS ###
+.DS_Store

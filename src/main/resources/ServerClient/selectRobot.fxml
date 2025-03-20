@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane stylesheets="@css/selectRobot.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewmodel.SelectRobotController">
+
+    <Pane fx:id="backgroundPane" style="-fx-background-image: url('/images/general/background.png');                  -fx-background-repeat: no-repeat;                  -fx-background-size: cover;                  -fx-background-position: center;" />
+    <Pane mouseTransparent="true" style="-fx-background-color: rgba(0, 0, 0, 0.84);" />
+
+    <GridPane fx:id="selectRobotGrid" alignment="CENTER" gridLinesVisible="false" maxHeight="960" maxWidth="1300.0" minHeight="960" minWidth="1300.0" prefHeight="960.0" prefWidth="1300.0">
+
+        <columnConstraints>
+            <ColumnConstraints minWidth="10.0" percentWidth="30.0" prefWidth="100.0" />
+            <ColumnConstraints percentWidth="55.0" />
+            <ColumnConstraints percentWidth="50.0" />
+            <ColumnConstraints />
+        </columnConstraints>
+
+        <!-- Row constraints -->
+        <rowConstraints>
+            <!-- Row 0: Header -->
+            <RowConstraints />
+            <!-- Row 1: Center -->
+            <RowConstraints percentHeight="16.0" />
+            <!-- Row 2: Ready button -->
+            <RowConstraints percentHeight="60.0" />
+            <RowConstraints percentHeight="25.0" />
+        </rowConstraints>
+
+        <children>
+            <BorderPane GridPane.columnIndex="1" GridPane.rowIndex="2">
+                <left>
+                    <Button fx:id="leftButton" onAction="#handleLeftButton" styleClass="blue-button" text="&lt;" BorderPane.alignment="CENTER" />
+                </left>
+                <right>
+                    <Button fx:id="rightButton" onAction="#handleRightButton" styleClass="blue-button" text="&gt;" BorderPane.alignment="CENTER" />
+                </right>
+                <center>
+                    <ImageView fx:id="robotInfo" fitHeight="543.0" fitWidth="396.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                        <image>
+                            <Image url="@../images/general/mockRobotImg.png" />
+                        </image>
+                        <BorderPane.margin>
+                            <Insets top="40.0" />
+                        </BorderPane.margin>
+                    </ImageView>
+                </center>
+            </BorderPane>
+
+            <GridPane fx:id="rightPane" hgap="10" prefHeight="600.0" prefWidth="400.0" vgap="0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                <columnConstraints>
+                    <ColumnConstraints />
+                </columnConstraints>
+                <rowConstraints>
+                    <!-- Row 0: Chat -->
+                    <RowConstraints />
+                    <!-- Row 1: Info board -->
+                    <RowConstraints />
+                <RowConstraints />
+                </rowConstraints>
+                <VBox fx:id="chatPlaceholder" prefHeight="490.0" prefWidth="380.0" GridPane.rowIndex="2">
+                    <GridPane.margin>
+                        <Insets left="30.0" top="40.0" />
+                    </GridPane.margin>
+                </VBox>
+            </GridPane>
+            <Button fx:id="chooseButton" onMouseClicked="#handleChooseButton" prefHeight="64.0" prefWidth="380.0" text="CHOOSE" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="TOP">
+                <GridPane.margin>
+                    <Insets left="30.0" top="30.0" />
+                </GridPane.margin>
+            </Button>
+            <HBox fx:id="imageHolder" alignment="TOP_CENTER" prefHeight="100.0" prefWidth="400.0" spacing="20.0" GridPane.columnIndex="1" GridPane.rowIndex="3" GridPane.valignment="TOP">
+                <children>
+                    <ImageView fx:id="robotImageSmall1" fitHeight="90.0" fitWidth="64.0" onMouseClicked="#handleSmallImageClick" preserveRatio="true" rotate="180">
+                        <image>
+                            <Image url="@../images/general/robots/ZoomBot.png" />
+                        </image>
+                        <cursor>
+                            <Cursor fx:constant="HAND" />
+                        </cursor>
+                        <HBox.margin>
+                            <Insets top="30.0" />
+                        </HBox.margin>
+                    </ImageView>
+                    <ImageView fx:id="robotImageSmall2" fitHeight="90.0" fitWidth="64.0" onMouseClicked="#handleSmallImageClick" preserveRatio="true" rotate="180">
+                        <image>
+                            <Image url="@../images/general/robots/HammerBot.png" />
+                        </image>
+                        <cursor>
+                            <Cursor fx:constant="HAND" />
+                        </cursor>
+                        <HBox.margin>
+                            <Insets top="30.0" />
+                        </HBox.margin>
+                    </ImageView>
+                    <ImageView fx:id="robotImageSmall3" fitHeight="90.0" fitWidth="64.0" onMouseClicked="#handleSmallImageClick" preserveRatio="true" rotate="180">
+                        <image>
+                            <Image url="@../images/general/robots/HulkX90.png" />
+                        </image>
+                        <cursor>
+                            <Cursor fx:constant="HAND" />
+                        </cursor>
+                        <HBox.margin>
+                            <Insets top="30.0" />
+                        </HBox.margin>
+                    </ImageView>
+                    <ImageView fx:id="robotImageSmall4" fitHeight="90.0" fitWidth="64.0" onMouseClicked="#handleSmallImageClick" preserveRatio="true" rotate="180">
+                        <image>
+                            <Image url="@../images/general/robots/SmashBot.png" />
+                        </image>
+                        <cursor>
+                            <Cursor fx:constant="HAND" />
+                        </cursor>
+                        <HBox.margin>
+                            <Insets top="30.0" />
+                        </HBox.margin>
+                    </ImageView>
+                    <ImageView fx:id="robotImageSmall5" fitHeight="90.0" fitWidth="64.0" onMouseClicked="#handleSmallImageClick" preserveRatio="true" rotate="180">
+                        <image>
+                            <Image url="@../images/general/robots/SpinBot.png" />
+                        </image>
+                        <cursor>
+                            <Cursor fx:constant="HAND" />
+                        </cursor>
+                        <HBox.margin>
+                            <Insets top="30.0" />
+                        </HBox.margin>
+                    </ImageView>
+                    <ImageView fx:id="robotImageSmall6" fitHeight="90.0" fitWidth="64.0" onMouseClicked="#handleSmallImageClick" preserveRatio="true" rotate="180">
+                        <image>
+                            <Image url="@../images/general/robots/Twonky.png" />
+                        </image>
+                        <cursor>
+                            <Cursor fx:constant="HAND" />
+                        </cursor>
+                        <HBox.margin>
+                            <Insets top="30.0" />
+                        </HBox.margin>
+                    </ImageView>
+                </children>
+            </HBox>
+            <Label fx:id="pageHeader" alignment="BOTTOM_CENTER" prefHeight="153.0" prefWidth="413.0" styleClass="page-header" text="ROBOT" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                <font>
+                    <Font size="47.0" />
+                </font>
+                <GridPane.margin>
+                    <Insets />
+                </GridPane.margin>
+            </Label>
+            <Label fx:id="robotErrorLabel" text="error label" textFill="RED" visible="false" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                <font>
+                    <Font size="20.0" />
+                </font>
+                <opaqueInsets>
+                    <Insets />
+                </opaqueInsets>
+                <GridPane.margin>
+                    <Insets left="30.0" top="30.0" />
+                </GridPane.margin>
+            </Label>
+            <Label fx:id="nameLabel" alignment="BOTTOM_CENTER" prefHeight="150.0" prefWidth="307.0" styleClass="page-header" text="NAME" GridPane.halignment="LEFT" GridPane.rowIndex="1">
+                <font>
+                    <Font size="47.0" />
+                </font>
+                <GridPane.margin>
+                    <Insets />
+                </GridPane.margin>
+            </Label>
+            <VBox prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="2">
+                <children>
+                    <TextField fx:id="username_tf" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="60.0" prefWidth="230.0" promptText="..." styleClass="username-tf">
+                        <VBox.margin>
+                            <Insets left="30.0" right="30.0" top="40.0" />
+                        </VBox.margin>
+                    </TextField>
+                    <Button fx:id="confirmButton" maxHeight="-Infinity" minHeight="-Infinity" mnemonicParsing="false" onAction="#confirmButtonClicked" prefHeight="60.0" prefWidth="230.0" text="CONFIRM" textAlignment="CENTER">
+                        <opaqueInsets>
+                            <Insets />
+                        </opaqueInsets>
+                        <VBox.margin>
+                            <Insets left="30.0" top="20.0" />
+                        </VBox.margin>
+                    </Button>
+                    <Label fx:id="nameLabel1" alignment="BOTTOM_CENTER" mouseTransparent="true" prefHeight="53.0" prefWidth="249.0" styleClass="page-header" text="ADD AI">
+                        <font>
+                            <Font size="47.0" />
+                        </font>
+                        <VBox.margin>
+                            <Insets bottom="30.0" left="40.0" top="160.0" />
+                        </VBox.margin>
+                    </Label>
+                    <HBox alignment="CENTER" prefHeight="60.0" prefWidth="239.0" spacing="15.0">
+                        <children>
+                            <Label fx:id="normalAILabel" alignment="CENTER" minWidth="156.0" prefHeight="50.0" prefWidth="156.0" styleClass="ai-label" text="stupid">
+                        <HBox.margin>
+                           <Insets left="50.0" />
+                        </HBox.margin></Label>
+                            <Button fx:id="addStupidAIButton" mnemonicParsing="false" onAction="#handleAddStupidAIButton" styleClass="blue-button" text="+" />
+                        </children>
+                        <HBox.margin>
+                            <Insets top="10.0" />
+                        </HBox.margin>
+                    </HBox>
+                    <HBox alignment="CENTER" prefHeight="60.0" prefWidth="239.0" spacing="15.0">
+                        <children>
+                            <Label fx:id="smartAILabel" alignment="CENTER" minWidth="156.0" prefHeight="50.0" prefWidth="156.0" styleClass="ai-label" text="medium">
+                        <HBox.margin>
+                           <Insets left="50.0" />
+                        </HBox.margin></Label>
+                            <Button fx:id="addMediumAIButton" mnemonicParsing="false" onAction="#handleAddNormalAIButton" styleClass="blue-button" text="+" />
+                        </children>
+                        <HBox.margin>
+                            <Insets top="10.0" />
+                        </HBox.margin>
+                    </HBox>
+                    <HBox alignment="CENTER" prefHeight="60.0" prefWidth="239.0" spacing="15.0">
+                        <children>
+                            <Label fx:id="smartAILabel1" alignment="CENTER" minWidth="156.0" prefHeight="50.0" prefWidth="156.0" styleClass="ai-label" text="smart">
+                        <HBox.margin>
+                           <Insets left="50.0" />
+                        </HBox.margin></Label>
+                            <Button fx:id="addSmartAIButton" mnemonicParsing="false" onAction="#handleAddSmartAIButton" styleClass="blue-button" text="+" />
+                        </children>
+                    </HBox>
+                </children>
+            </VBox>
+            <Label fx:id="chosenRobotLabel" alignment="CENTER" prefHeight="50.0" prefWidth="380.0" GridPane.columnIndex="2" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                <GridPane.margin>
+                    <Insets left="30.0" />
+                </GridPane.margin>
+            </Label>
+        </children>
+        <StackPane.margin>
+            <Insets />
+        </StackPane.margin>
+    </GridPane>
+</StackPane>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="TOP_CENTER" prefHeight="500.0" prefWidth="700.0" styleClass="vbox" stylesheets="@css/upgradePopUps.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewmodel.AdminPrivilegeController">
+    <children>
+        <Label fx:id="headerBig" prefHeight="108.0" prefWidth="600.0" text="ADMIN PRIVILEGE" />
+
+        <HBox fx:id="damagePilesContainer" alignment="CENTER" prefHeight="206.0" prefWidth="700.0" spacing="30.0">
+            <children>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label prefHeight="43.0" prefWidth="100.0" styleClass="register-label" text="1" />
+                      <ImageView fx:id="register0" fitHeight="150.0" fitWidth="100.0" onMouseClicked="#onPileClicked" pickOnBounds="true" preserveRatio="true" styleClass="damage-pile" />
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label prefHeight="43.0" prefWidth="100.0" styleClass="register-label" text="2" />
+                      <ImageView fx:id="register1" fitHeight="150.0" fitWidth="100.0" onMouseClicked="#onPileClicked" pickOnBounds="true" preserveRatio="true" styleClass="damage-pile" />
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label prefHeight="43.0" prefWidth="100.0" styleClass="register-label" text="3" />
+                  <ImageView fx:id="register2" fitHeight="150.0" fitWidth="100.0" onMouseClicked="#onPileClicked" pickOnBounds="true" preserveRatio="true" styleClass="damage-pile" />
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label prefHeight="43.0" prefWidth="100.0" styleClass="register-label" text="4" />
+                  <ImageView fx:id="register3" fitHeight="150.0" fitWidth="100.0" onMouseClicked="#onPileClicked" pickOnBounds="true" preserveRatio="true" styleClass="damage-pile" />
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label prefHeight="43.0" prefWidth="100.0" styleClass="register-label" text="5" />
+                  <ImageView fx:id="register4" fitHeight="150.0" fitWidth="100.0" onMouseClicked="#onPileClicked" pickOnBounds="true" preserveRatio="true" styleClass="damage-pile" />
+               </children>
+            </VBox>
+            </children>
+        </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="72.0" prefWidth="670.0">
+         <children>
+            <Label fx:id="textLabel" prefHeight="72.0" prefWidth="563.0" text="SELECT THE DESIRED REGISTER" />
+         </children>
+         <VBox.margin>
+            <Insets left="40.0" />
+         </VBox.margin>
+      </HBox>
+
+              <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+            <children>
+                <Button fx:id="abortButton" alignment="CENTER" mnemonicParsing="false" onMouseClicked="#handleAbortButton" prefHeight="48.0" prefWidth="57.0" text="X" />
+                <Button fx:id="chooseButton" alignment="CENTER" mnemonicParsing="false" onMouseClicked="#handleChooseButton" prefHeight="48.0" prefWidth="159.0" text="DONE" />
+            </children>
+         <VBox.margin>
+            <Insets right="30.0" />
+         </VBox.margin>
+        </HBox>
+      <Label fx:id="errorLabel" prefHeight="25.0" prefWidth="620.0">
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+      </Label>
+    </children>
+</VBox>

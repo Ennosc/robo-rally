@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'Dogica';
+    src: url('../fonts/dogica.ttf') format('truetype');
+}
+
+#rebootLabel {
+    -fx-font-family: 'Dogica';
+    -fx-font-size: 20px;
+    -fx-text-fill: #BBE6FF;
+    -fx-line-spacing: 36px;
+}
+
+#timerLabel {
+    -fx-font-family: 'Dogica';
+    -fx-font-size: 25px;
+    -fx-text-fill: #BBE6FF;
+    -fx-line-spacing: 36px;
+}
+
+.direction-button {
+    -fx-font-size: 35px;
+    -fx-text-fill: #BBE6FF;
+    -fx-font-family: 'Dogica';
+    -fx-effect: null;
+    -fx-background-color: none;
+    -fx-border-color: transparent;
+    -fx-cursor: hand;
+}
+
+.direction-button:hover {
+    -fx-text-fill: #8BAFCC;
+}
+
+#buttonTop {
+    -fx-rotate: -90;
+}
+
+#buttonDown {
+    -fx-rotate: 90;
+}
+
+#confirmButton {
+    -fx-background-color: #BBE6FF;
+    -fx-border-color: #3D484A;
+    -fx-text-fill: #000;
+    -fx-border-radius: 0px;
+    -fx-border-width: 2px;
+    -fx-font-family: 'Dogica';
+    -fx-font-size: 20px;
+    -fx-cursor: hand;
+}
+
+#confirmButton:hover {
+    -fx-background-color: #8BAFCC;
+}

@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'Dogica';
+    src: url('../fonts/dogica.ttf') format('truetype');
+}
+
+/* bold fonts dont work */
+@font-face {
+    font-family: 'Dogica-Bold';
+    src: url('../fonts/dogicabold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Dogica-PixelBold';
+    src: url('../fonts/dogicapixelbold.ttf') format('truetype');
+}
+
+
+/* buttons for map gallery */
+#leftButton, #rightButton {
+    -fx-font-size: 35px;
+    -fx-text-fill: #BBE6FF;
+    -fx-font-family: 'Dogica';
+    -fx-effect: null;
+    -fx-background-color: none;
+    -fx-border-color: transparent;
+    -fx-cursor: hand;
+}
+
+#leftButton:hover, #rightButton:hover {
+    -fx-text-fill: #8BAFCC;
+}
+
+#mapImageSmall1 {
+    -fx-padding-left: 20pt;
+}
+
+#readyButton, #selectButton {
+    -fx-background-color: #BBE6FF;
+    -fx-border-color: #3D484A;
+    -fx-text-fill: #000;
+    -fx-border-radius: 0px;
+    -fx-border-width: 2px;
+    -fx-font-family: 'Dogica';
+    -fx-font-size: 26px;
+    -fx-cursor: hand;
+}
+
+#readyButton:hover, #selectButton:hover{
+    -fx-background-color: #8BAFCC;
+}
+
+#mapNameLabel {
+    -fx-font-family: 'Dogica';
+    -fx-font-size: 24px;
+    -fx-text-fill: #BBE6FF;
+    -fx-text-alignment: center;
+    -fx-line-spacing: 0;
+    -fx-wrap-text: true;
+    -fx-border-radius: 0px;
+    -fx-border-width: 2px;
+    -fx-border-color: #BBE6FF;
+    -fx-background-color: transparent;
+    -fx-padding: 5px 0;
+}
+
+#mapPane {
+    -fx-border-radius: 0px;
+    -fx-border-width: 2px;
+    -fx-border-color: #3D484A;
+}

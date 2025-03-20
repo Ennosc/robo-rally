@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'Dogica';
+    src: url('../fonts/dogica.ttf') format('truetype');
+}
+
+#chatRoot {
+    -fx-background-color: transparent;
+    -fx-border-color: #3D484A;
+    -fx-border-width: 2px;
+    -fx-border-radius: 0px;
+    -fx-padding: 10 20 10 10;
+}
+#vbox_messages Text {
+    -fx-font-family: 'Dogica'; /* Name der Schriftart */
+    -fx-font-size: 10px; /* Schriftgröße */
+    -fx-fill: #000000; /* Schriftfarbe */
+}
+
+#sp_main {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-border-radius: 0px;
+    -fx-fit-to-width: true;
+}
+
+#sp_main .viewport {
+    -fx-background-color: transparent;
+}
+
+#vbox_messages {
+    -fx-background-color: transparent;
+}
+
+#comboBox_users {
+    -fx-font-size: 9px;
+    -fx-border-radius: 0px;
+    -fx-border-width: 2px;
+    -fx-cursor: hand;
+    -fx-background-color: #BBE6FF;
+    -fx-border-color: #3D484A;
+    -fx-text-fill: #000;
+    -fx-font-family: 'Dogica';
+}
+#comboBox_users .list-view {
+    -fx-background-color: #BBE6FF;
+    -fx-border-color: #3D484A;
+}
+#comboBox_users .list-cell {
+    -fx-font-family: 'Dogica';
+    -fx-font-size: 9px;
+    -fx-text-fill: #000;
+    -fx-background-color: #BBE6FF;
+}
+
+#comboBox_users .list-cell:hover {
+    -fx-background-color: #8BAFCC;
+    -fx-text-fill: #000;
+}
+
+#tf_message {
+    -fx-background-color: #000;
+    -fx-border-radius: 0px;
+    -fx-border-color: #BBE6FF;
+    -fx-border-width: 2px;
+    -fx-text-fill: #fff;
+    -fx-font-family: 'Dogica';
+    -fx-font-size: 8px;
+}
+
+#button_send {
+    -fx-font-size: 9px;
+    -fx-border-radius: 0px;
+    -fx-border-width: 2px;
+    -fx-cursor: hand;
+    -fx-background-color: #BBE6FF;
+    -fx-border-color: #3D484A;
+    -fx-text-fill: #000;
+    -fx-font-family: 'Dogica';
+
+}
+
+#sp_main .scroll-bar {
+    -fx-background-color: rgba(0, 0, 0, 0.3);
+}
+
+#sp_main .scroll-bar .thumb {
+    -fx-background-color: rgba(1, 22, 35, 0.7);
+    -fx-border-color: rgba(0, 0, 0, 0.3);
+}
+
+#sp_main .scroll-bar .track {
+    -fx-background-color: rgba(0, 0, 0, 0.3);
+    -fx-border-color: transparent;
+}
+
+#button_send:hover, #comboBox_users:hover{
+    -fx-background-color: #8BAFCC;
+    -fx-border-radius: 0px;
+    -fx-border-width: 2px;
+    -fx-text-fill: #000000;
+}
+
+
+

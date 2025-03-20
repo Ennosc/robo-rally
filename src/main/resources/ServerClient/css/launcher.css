@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'Dogica';
+    src: url('../fonts/dogica.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Dogica Bold';
+    src: url('../fonts/dogicabold.ttf') format('truetype');
+}
+
+.vbox{
+    -fx-background-color: rgba(0, 0, 0, 0.84);
+    -fx-font-family: 'Dogica';
+    -fx-text-fill: #BBE6FF;
+    -fx-background-image: url('/images/general/background.png');
+
+}
+
+#titleLabel, #footerLabel {
+    -fx-font-size: 27px;
+    -fx-text-fill: #BBE6FF;
+    -fx-font-family: 'Dogica';
+}
+#titleLabel{
+    -fx-font-family: 'Dogica Bold';
+}
+ #local_box, #internet_box {
+    -fx-font-size: 18px;
+    -fx-text-fill: #BBE6FF;
+    -fx-font-family: 'Dogica';
+     -fx-cursor: hand;
+}
+
+#startButton {
+    -fx-background-color: #BBE6FF;
+    -fx-border-color: #3D484A;
+    -fx-text-fill: #000;
+    -fx-border-radius: 0px;
+    -fx-border-width: 2px;
+    -fx-font-family: 'Dogica';
+    -fx-font-size: 20px;
+    -fx-cursor: hand;
+}
+
+
+
+

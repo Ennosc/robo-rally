@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="TOP_CENTER" prefHeight="400.0" prefWidth="600.0" styleClass="vbox" stylesheets="@css/pickDamage.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewmodel.PickDamageController">
+   <children>
+      <Label fx:id="titleLabel" alignment="CENTER" prefHeight="108.0" prefWidth="600.0" text="PICK A DAMAGE CARD" />
+      <HBox fx:id="damagePilesContainer" alignment="CENTER" prefHeight="200.0" prefWidth="600.0" spacing="30.0">
+         <children>
+            <VBox alignment="CENTER" spacing="5">
+               <children>
+                  <ImageView fx:id="damagePile1" fitHeight="150.0" fitWidth="100.0" onMouseClicked="#onPileClicked" pickOnBounds="true" preserveRatio="true" styleClass="damage-pile" />
+                  <Label fx:id="damageCount1" styleClass="count-label" textFill="white" visible="false">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin></Label>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" spacing="5">
+               <children>
+                  <ImageView fx:id="damagePile2" fitHeight="150.0" fitWidth="100.0" onMouseClicked="#onPileClicked" pickOnBounds="true" preserveRatio="true" styleClass="damage-pile" />
+                  <Label fx:id="damageCount2" styleClass="count-label" textFill="white" visible="false">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin></Label>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </VBox>
+            <VBox alignment="CENTER" spacing="5">
+               <children>
+                  <ImageView fx:id="damagePile3" fitHeight="150.0" fitWidth="100.0" onMouseClicked="#onPileClicked" pickOnBounds="true" preserveRatio="true" styleClass="damage-pile" />
+                  <Label fx:id="damageCount3" styleClass="count-label" textFill="white" visible="false">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin></Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Button fx:id="chooseButton" alignment="CENTER" mnemonicParsing="false" onMouseClicked="#handleChooseButton" prefHeight="48.0" prefWidth="159.0" text="CHOOSE">
+         <VBox.margin>
+            <Insets top="50.0" />
+         </VBox.margin>
+      </Button>
+      <Label fx:id="errorLabel" alignment="CENTER" prefHeight="17.0" prefWidth="272.0">
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </Label>
+   </children>
+</VBox>

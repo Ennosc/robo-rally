@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Dogica';
+    src: url('../fonts/dogica.ttf') format('truetype');
+}
+
+.vbox{
+    -fx-background-color: rgba(0, 0, 0, 0.84);
+    -fx-font-family: 'Dogica';
+    -fx-text-fill: #BBE6FF;
+}
+#titleLabel {
+    -fx-font-size: 50px;
+    -fx-text-fill: #BBE6FF;
+    -fx-font-family: 'Dogica';
+}
+
+#winnerLabel {
+    -fx-font-size: 30px;
+    -fx-text-fill: white;
+    -fx-font-family: Inter;
+}
+
+#playerNameLabel {
+    -fx-font-size: 35px;
+    -fx-text-fill: #BBE6FF;
+    -fx-font-family: 'Dogica';
+}
+
+

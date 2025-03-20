@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewmodel.InfoBoardController" stylesheets="@css/infoBoard.css" prefWidth="400" prefHeight="300">
+    <Label fx:id="boardHeader" prefHeight="18.0" prefWidth="448.0" style="-fx-font-size: 16px;                                   -fx-font-weight: bold;                                   -fx-text-fill: #BBE6FF;                                   -fx-font-family: 'Dogica';                                   -fx-background-color: #000;                                   -fx-border-color: #3D484A;                                   -fx-border-width: 2px;                                   -fx-padding: 15;" text="INFO BOARD" />
+    <TableView fx:id="infoBoard" prefHeight="250.0" prefWidth="382.0">
+        <columns>
+            <TableColumn fx:id="playerColumn" text="PLAYER" />
+            <TableColumn fx:id="robotColumn" text="ROBOT" />
+            <TableColumn fx:id="statusColumn" text="STATUS" />
+        </columns>
+    </TableView>
+</VBox>

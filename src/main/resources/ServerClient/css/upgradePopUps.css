@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Dogica';
+    src: url('../fonts/dogica.ttf') format('truetype');
+}
+
+.vbox {
+    -fx-background-color: rgba(0, 0, 0, 0.84);
+}
+
+#titleLabel, #text {
+    -fx-font-family: 'Dogica';
+    -fx-text-fill: #BBE6FF;
+}
+
+#titleLabel {
+    -fx-font-size: 24px;
+}
+
+#text {
+    -fx-font-size: 15px;
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+}
+
+#abortButton, #chooseButton {
+    -fx-background-color: #BBE6FF;
+    -fx-border-color: #3D484A;
+    -fx-text-fill: #000;
+    -fx-border-radius: 0px;
+    -fx-border-width: 2px;
+    -fx-font-family: 'Dogica';
+    -fx-font-size: 16px;
+    -fx-cursor: hand;
+}
+
+.vbox {
+    -fx-background-color: black;
+}
+#abortButton:hover, #chooseButton:hover {
+    -fx-background-color: #8BAFCC;
+}
+.text-label {
+    -fx-font-family: 'Dogica';
+
+    -fx-font-size: 15px;
+    -fx-text-fill: #BBE6FF;
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+}
+
+#errorLabel{
+    -fx-font-family: 'Dogica';
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+    -fx-font-size: 12px;
+    -fx-line-spacing: 5px;
+    -fx-text-fill: red;
+}
+
+.register-label {
+    -fx-font-size: 15px;
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+    -fx-font-family: 'Dogica';
+    -fx-text-fill: #BBE6FF;
+}
+
+#headerBig {
+    -fx-font-size: 32px;
+    -fx-font-family: 'Dogica';
+    -fx-text-fill: #BBE6FF;
+}
+
+#textLabel {
+    -fx-font-family: 'Dogica';
+    -fx-text-fill: #BBE6FF;
+    -fx-font-size: 20px;
+}

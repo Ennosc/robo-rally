@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'Dogica';
+    src: url('../fonts/dogica.ttf') format('truetype');
+}
+
+#boardHeader {
+    -fx-text-fill: #BBE6FF;
+    -fx-font-family: 'Dogica';
+    -fx-border-width: 2px;
+    -fx-border-color: #3D484A;
+    -fx-background-color: #000;
+}
+
+#playerColumn, #robotColumn, #statusColumn {
+    -fx-text-fill: #BBE6FF;
+    -fx-font-family: Inter;
+    -fx-background-color: transparent;
+}
+
+.table-view {
+    -fx-background-color: transparent;
+    -fx-control-inner-background: transparent;
+    -fx-table-cell-border-color: transparent;
+    -fx-padding: 0;
+    -fx-border-color: #3D484A;
+    -fx-border-width: 2px;
+    -fx-border-radius: 0px;
+    -fx-border-insets: 0px;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #000000;
+    -fx-border-color: #3D484A;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 0px;
+}
+
+.table-view .column-header .label {
+    -fx-font-family: Inter;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #BBE6FF;
+}
+
+.table-view .scroll-bar:horizontal {
+    -fx-opacity: 0;
+    -fx-max-height: 0;
+}
+
+.table-row-cell:focused, .table-row-cell:selected {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+.table-header-row {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.table-view .column-header, .table-cell {
+    -fx-padding: 0;
+    -fx-border-width: 0;
+}
+.table-view .column-header {
+    -fx-alignment: CENTER;
+    -fx-text-alignment: center;
+}
+
+.table-cell {
+    -fx-alignment: CENTER;
+    -fx-text-alignment: center;
+}

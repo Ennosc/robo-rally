@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="TOP_CENTER" prefHeight="600.0" prefWidth="900.0" spacing="20.0" styleClass="vbox" stylesheets="@css/upgradePopUps.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewmodel.MemorySwapController">
+    <children>
+        <Label fx:id="titleLabel" alignment="CENTER" prefHeight="50.0" prefWidth="600.0" text="MEMORY SWAP" />
+
+        <Label fx:id="newCardsLabel" alignment="CENTER" maxWidth="Infinity" prefHeight="20.0" styleClass="text-label" text="NEW CARDS">
+            <VBox.margin>
+                <Insets top="5.0" />
+            </VBox.margin>
+        </Label>
+        <HBox fx:id="damagePilesContainer" alignment="CENTER" prefHeight="80.0" prefWidth="200.0" spacing="20.0">
+            <children>
+                <ImageView fx:id="newCard0" fitHeight="120.0" fitWidth="80.0" onMouseClicked="#onPileClicked" pickOnBounds="true" preserveRatio="true" styleClass="damage-pile" />
+                <ImageView fx:id="newCard1" fitHeight="120.0" fitWidth="80.0" onMouseClicked="#onPileClicked" pickOnBounds="true" preserveRatio="true" styleClass="damage-pile" />
+                <ImageView fx:id="newCard2" fitHeight="120.0" fitWidth="80.0" onMouseClicked="#onPileClicked" pickOnBounds="true" preserveRatio="true" styleClass="damage-pile" />
+            </children>
+        </HBox>
+
+        <Label fx:id="yourCardsLabel" alignment="CENTER" maxWidth="Infinity" prefHeight="20.0" styleClass="text-label" text="YOUR HAND" />
+        <HBox fx:id="damagePilesContainer1" alignment="CENTER" prefHeight="80.0" prefWidth="200.0" spacing="20.0">
+            <children>
+                <ImageView fx:id="card0" fitHeight="120.0" fitWidth="80.0" onMouseClicked="#onPileClicked" pickOnBounds="true" preserveRatio="true" styleClass="damage-pile" />
+                <ImageView fx:id="card1" fitHeight="120.0" fitWidth="80.0" onMouseClicked="#onPileClicked" pickOnBounds="true" preserveRatio="true" styleClass="damage-pile" />
+                <ImageView fx:id="card2" fitHeight="120.0" fitWidth="80.0" onMouseClicked="#onPileClicked" pickOnBounds="true" preserveRatio="true" styleClass="damage-pile" />
+                <ImageView fx:id="card3" fitHeight="120.0" fitWidth="80.0" onMouseClicked="#onPileClicked" pickOnBounds="true" preserveRatio="true" styleClass="damage-pile" />
+                <ImageView fx:id="card4" fitHeight="120.0" fitWidth="80.0" onMouseClicked="#onPileClicked" pickOnBounds="true" preserveRatio="true" styleClass="damage-pile" />
+                <ImageView fx:id="card5" fitHeight="120.0" fitWidth="80.0" onMouseClicked="#onPileClicked" pickOnBounds="true" preserveRatio="true" styleClass="damage-pile" />
+                <ImageView fx:id="card6" fitHeight="120.0" fitWidth="80.0" onMouseClicked="#onPileClicked" pickOnBounds="true" preserveRatio="true" styleClass="damage-pile" />
+                <ImageView fx:id="card7" fitHeight="120.0" fitWidth="80.0" onMouseClicked="#onPileClicked" pickOnBounds="true" preserveRatio="true" styleClass="damage-pile" />
+                <ImageView fx:id="card8" fitHeight="120.0" fitWidth="80.0" onMouseClicked="#onPileClicked" pickOnBounds="true" preserveRatio="true" styleClass="damage-pile" />
+            </children>
+        </HBox>
+
+        <Label fx:id="chooseCardsLabel" alignment="CENTER" maxWidth="Infinity" prefHeight="20.0" styleClass="text-label" text="CHOOSE THE CARDS YOU DESIRE TO DISCARD" />
+
+        <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0" spacing="15.0">
+            <children>
+                <Button fx:id="chooseButton" mnemonicParsing="false" onMouseClicked="#handleChooseButton" prefHeight="40.0" prefWidth="138.0" text="DISCARD" />
+            </children>
+        </HBox>
+      <Label fx:id="errorLabel" />
+    </children>
+</VBox>

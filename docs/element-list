@@ -1,0 +1,27 @@
+Unbenanntes Package
+helpers
+model.game
+model.game.AI
+model.game.board
+model.game.board.robots
+model.game.board.tiles
+model.game.cards
+model.game.maps
+model.server_client
+network
+network.interpreters
+network.messages
+network.messages.actions8
+network.messages.cards6
+network.messages.chat4
+network.messages.connection2
+network.messages.lobby3
+network.messages.phases7
+network.messages.phases7.activation
+network.messages.phases7.programming
+network.messages.phases7.setup
+network.messages.phases7.upgrade
+network.messages.specialMessage5
+view
+viewmodel
+viewmodel.tilesGUI

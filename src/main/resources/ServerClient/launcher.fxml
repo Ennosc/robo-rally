@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="550.0" prefWidth="850.0" styleClass="vbox" stylesheets="@css/launcher.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewmodel.LauncherController">
+
+    <children>
+        <!-- Title -->
+        <Label fx:id="titleLabel" alignment="CENTER" contentDisplay="CENTER" text="WELCOME, FUTURE RAGE QUITTER!" VBox.vgrow="NEVER">
+            <VBox.margin>
+                <Insets bottom="80.0" />
+            </VBox.margin>
+            <font>
+                <Font size="35.0" />
+            </font>
+        </Label>
+      <HBox prefHeight="70.0" prefWidth="200.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="80.0" />
+
+              <!-- Play Local CheckBox -->
+              <CheckBox fx:id="local_box" mnemonicParsing="false" selected="true" text="PLAY LOCAL">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+              </CheckBox>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="80.0" />
+
+              <!-- Play Via The Internet CheckBox -->
+              <CheckBox fx:id="internet_box" disable="true" mnemonicParsing="false" text="PLAY VIA THE INTERNET" />
+         </children>
+      </HBox>
+
+        <!-- Footer Label -->
+        <Label fx:id="footerLabel" text="HOPE YOU HAVE READ THE MANUAL!">
+            <VBox.margin>
+                <Insets />
+            </VBox.margin>
+        </Label>
+
+        <!-- Start Button -->
+        <Button fx:id="startButton" mnemonicParsing="false" onAction="#startButtonClicked" prefHeight="50.0" prefWidth="250.0" text="START GAME">
+            <VBox.margin>
+                <Insets top="55.0" />
+            </VBox.margin>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+    </children>
+
+</VBox>

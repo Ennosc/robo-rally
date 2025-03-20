@@ -1,0 +1,187 @@
+@font-face {
+    font-family: 'Dogica';
+    src: url('../fonts/dogica.ttf') format('truetype');
+}
+
+#checkpointsLabel {
+    -fx-font-family: 'Dogica';
+    -fx-text-fill: #BBE6FF;
+    -fx-line-spacing: 36px;
+}
+
+#phaseLabel {
+    -fx-font-family: 'Dogica';
+    -fx-text-fill: #BBE6FF;
+    -fx-background-color: rgba(187, 230, 255, 0.19);
+    -fx-alignment: CENTER;
+    -fx-text-alignment: CENTER;
+}
+
+.image-view-placeholder {
+    -fx-background-color: #2B2B2B;
+    -fx-border-color: #F8E642;
+    -fx-border-width: 1;
+    -fx-background-radius: 5;
+    -fx-alignment: CENTER;
+}
+
+.placeholder-register-label {
+    -fx-font-family: 'Dogica';
+    -fx-font-size: 13px;
+    -fx-text-fill: #BBE6FF;
+    -fx-alignment: CENTER_RIGHT;
+}
+
+.placeholder-playername-label {
+    -fx-font-family: 'Dogica';
+    -fx-font-size: 16px;
+    -fx-text-fill: #BBE6FF;
+    -fx-alignment: CENTER_RIGHT;
+}
+
+.placeholder-energy-label {
+    -fx-font-family: 'Dogica';
+    -fx-font-size: 13px;
+    -fx-text-fill: #BBE6FF;
+    -fx-alignment: CENTER_LEFT;
+}
+
+.placeholder-upgrade-label {
+    -fx-font-family: 'Dogica';
+    -fx-font-size: 8px;
+    -fx-text-fill: #BBE6FF;
+    -fx-alignment: center;
+    -fx-line-spacing: 4px;
+    -fx-text-alignment: CENTER;
+}
+
+.upgrade-placeholder {
+    -fx-background-color: #2B2B2B;
+    -fx-border-color: #BBE6FF;
+    -fx-border-width: 1;
+    -fx-alignment: CENTER;
+}
+
+#errorMessage{
+    -fx-font-family: 'Dogica';
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+    -fx-font-size: 12px;
+    -fx-line-spacing: 5px;
+}
+
+#registersLabel {
+    -fx-font-family: 'Dogica';
+    -fx-text-fill: white;
+}
+.registerCard {
+    -fx-background-color: lightgray;
+    -fx-padding: 5;
+    -fx-border-color: gray;
+    /*-fx-border-width: 3;*/
+    -fx-border-color: yellow !important;
+    -fx-border-width: 50px !important;
+    -fx-border-style: solid;
+}
+
+#checkpointsHolder {
+    /*
+    -fx-background-color: rgba(187, 230, 255, 0.19);
+
+     */
+}
+#chatPlaceHolder{
+    -fx-padding: 10 20 10 10;
+}
+#playButton, #upgradeShopButton {
+    -fx-background-color: #BBE6FF;
+    -fx-border-color: #3D484A;
+    -fx-text-fill: #000;
+    -fx-border-radius: 0px;
+    -fx-border-width: 2px;
+    -fx-font-family: 'Dogica';
+    -fx-font-size: 10px;
+}
+
+#playButton:hover, #upgradeShopButton:hover{
+    -fx-background-color: #8BAFCC;
+    -fx-cursor: hand;
+    -fx-font-size: 10px;
+}
+
+.blinking {
+    -fx-font-weight: bold;
+    -fx-opacity: 1;
+    animation: blink 1s infinite alternate;
+}
+
+.timerStyle{
+    -fx-font-family: 'Dogica';
+    -fx-font-size: 18px;
+    -fx-text-fill: #BBE6FF;
+    -fx-alignment: center;
+    -fx-wrap-text: true;
+    -fx-spacing: 2px;
+}
+
+
+#label2 {
+    -fx-font-family: 'Dogica';
+    -fx-font-size: 16px;
+    -fx-text-fill: #BBE6FF;
+    -fx-alignment: CENTER;
+    -fx-text-alignment: CENTER;
+}
+.hand-cursor {
+    -fx-cursor: hand;
+}
+
+.energy-count-label {
+    -fx-font-family: 'Dogica';
+    -fx-font-size: 20px;
+    -fx-text-fill: #BBE6FF;
+    -fx-alignment: center;
+    -fx-spacing: 2px;
+}
+
+#infoText{
+    -fx-font-family: 'Dogica';
+    -fx-font-size: 20px;
+    -fx-fill: #BBE6FF;
+}
+
+#infoTextFlow {
+    -fx-line-spacing: 10px;
+    -fx-text-alignment: center;
+}
+
+.infoHBox {
+    -fx-alignment: center-left;
+}
+
+.infoImage {
+    -fx-padding: 0 0 0 10px;
+}
+
+#damageTextFlow {
+    -fx-line-spacing: 10px;
+    -fx-text-alignment: center;
+}
+
+#damageText{
+    -fx-font-family: 'Dogica';
+    -fx-font-size: 15px;
+    -fx-fill: #BBE6FF;
+}
+.register-highlight {
+    -fx-border-color: red;
+    -fx-border-width: 30;
+    -fx-border-style: solid;
+}
+
+.selected-upgrade {
+    -fx-border-color: #BBE6FF;
+    -fx-border-width: 3px;
+    -fx-border-style: solid;
+}
+
